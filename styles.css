@@ -19,11 +19,102 @@ main {
   margin: auto;
 }
 
+/*##################################*/
 section {
-    background: linear-gradient(-90deg, #f0c20a 0% 50%, #151637 50% 100%);
+  background: linear-gradient(-90deg, #f0c20a 0% 50%, #151637 50% 100%);
   padding: 1rem 1rem 1rem 1rem;
+}
+section {
   border: #ffffff solid 1px;
   height: 32rem;
+}
+
+section {
+  display: flex;
+}
+
+section > div {
+  border: #ffffff solid 1px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+section > div:first-child {
+  color: #f0c20a;
+}
+
+section > div:last-child {
+  color: #151637;
+}
+
+section > div img {
+  height: 16rem;
+  width: 16rem;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+}
+
+input[name="slide"] {
+  display: none;
+}
+
+#slide1:checked ~ .slides {
+  transform: translateX(0%);
+}
+
+#slide2:checked ~ .slides {
+  transform: translateX(-100%);
+}
+
+#slide3:checked ~ .slides {
+  transform: translateX(-200%);
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  display: flex;
+  gap: 10px;
+  transform: translateX(-50%);
+}
+
+.controls label {
+  width: 15px;
+  height: 15px;
+  background-color: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#slide1:checked ~ .controls label[for="slide1"],
+#slide2:checked ~ .controls label[for="slide2"],
+#slide3:checked ~ .controls label[for="slide3"] {
+  background-color: #333;
+}
+/*##################################*/
+.section {
+  background: linear-gradient(-45deg, #151637 0% 50%, #f0c20a 75% 50%);
 }
 
 .header {
@@ -83,7 +174,7 @@ section {
   display: flex;
 }
 
-.footer div {
+.footer > div {
   flex-direction: column;
   border: #ffffff solid 1px;
   align-items: center;
@@ -94,78 +185,112 @@ section {
   padding: 1rem;
 }
 
-.footer div .externals-h {
+.footer > div .externals-h {
   background-color: #f0c20a;
   padding: 0;
   margin: 0;
 }
 
-.footer div .externals-h {
+.footer > div .externals-h {
   flex-direction: row;
   display: flex;
 }
 
-.footer div .externals-h li {
+.footer > div .externals-h li {
   list-style: none;
 }
 
-.footer div .externals-h li a {
+.footer > div .externals-h li a {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0c20a;
 }
 
-.footer div .externals-h li a:hover {
+.footer > div .externals-h li a:hover {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0d259;
 }
 
-.footer div .externals-h li a {
+.footer > div .externals-h li a {
   border: #ffffff solid 1px;
   color: #151637;
 }
 
-.footer div .externals-h li a {
+.footer > div .externals-h li a {
   text-decoration: none;
   display: block;
 }
 
-.footer div img {
-  border: #ffffff solid 1px;
+.footer > div img {
   height: 8rem;
   width: 8rem;
 }
 
-.footer div .externals-v {
+.footer > div .externals-v {
   background-color: #f0c20a;
   padding: 0;
   margin: 0;
 }
 
-.footer div .externals-v {
+.footer > div .externals-v {
   flex-direction: column;
   display: flex;
 }
 
-.footer div .externals-v li {
+.footer > div .externals-v li {
   list-style: none;
 }
 
-.footer div .externals-v li a {
+.footer > div .externals-v li a {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0c20a;
 }
 
-.footer div .externals-v li a:hover {
+.footer > div .externals-v li a:hover {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0d259;
 }
 
-.footer div .externals-v li a {
+.footer > div .externals-v li a {
   border: #ffffff solid 1px;
   color: #151637;
 }
 
-.footer div .externals-v li a {
+.footer > div .externals-v li a {
   text-decoration: none;
   display: block;
 }
+
+/*##################################*/
+
+.logo-with-footer {
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+}
+
+.logo-with-footer img {
+  width: 8rem;
+  height: 8rem;
+  margin: auto;
+}
+
+.logo-with-footer div {
+  flex-direction: column;
+  display: flex;
+  padding: 0;
+}
+
+.logo-with-footer div h1 {
+  font-size: 1.75rem;
+  color: #fdffd4;
+  display: block;
+  margin: auto;
+}
+
+.logo-with-footer div span {
+  font-size: 1rem;
+  color: #fdffd4;
+  display: block;
+  margin: auto;
+}
+/*##################################*/

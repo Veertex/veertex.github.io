@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
+    <title>Veertex | Desarrollador Web</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image" href="img_1.png">
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -24,7 +25,85 @@
           </ul>
         </nav>
       </header>
-      <section></section>
+
+      <div class="slider">
+        <input type="radio" name="slide" id="slide1" />
+        <input type="radio" name="slide" id="slide2" />
+        <input type="radio" name="slide" id="slide3" />
+
+        <div class="slides">
+          <div class="slide" id="s1">
+            <section>
+              <div>
+                <h2>Titulo #1</h2>
+                <span> Subtitulo </span>
+              </div>
+              <div>
+                <div class="logo-with-footer">
+                  <img src="img_1.png" alt="" />
+                  <div>
+                    <h1>Veertex</h1>
+                    <span>.DEV</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="slide" id="s2">
+            <section>
+              <div>
+                <h2>Titulo #2</h2>
+                <span> Subtitulo </span>
+              </div>
+              <div>
+                <div class="logo-with-footer">
+                  <img src="img_1.png" alt="" />
+                  <div>
+                    <h1>Veertex</h1>
+                    <span>.DEV</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="slide" id="s3">
+            <section>
+              <div>
+                <h2>Titulo #3</h2>
+                <span> Subtitulo </span>
+              </div>
+              <div>
+                <div class="logo-with-footer">
+                  <img src="img_1.png" alt="" />
+                  <div>
+                    <h1>Veertex</h1>
+                    <span>.DEV</span>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+        </div>
+      </div>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          let currentSlide = 1;
+          const totalSlides = 3;
+
+          function changeSlide() {
+            document.getElementById(`slide${currentSlide}`).checked = true;
+            currentSlide = (currentSlide % totalSlides) + 1;
+          }
+
+          changeSlide();
+          setInterval(changeSlide, 1750);
+        });
+      </script>
       <footer class="footer">
         <div>
           <ul class="externals-v">
@@ -40,7 +119,13 @@
           </ul>
         </div>
         <div>
-          <img src="logo.png" alt="" />
+          <div class="logo-with-footer">
+            <img src="img_1.png" alt="" />
+            <div>
+              <h1>Veertex</h1>
+              <span>.DEV</span>
+            </div>
+          </div>
           <ul class="externals-h">
             <li>
               <a href=""
