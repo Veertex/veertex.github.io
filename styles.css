@@ -178,7 +178,7 @@ input[name="slide"] {
   display: flex;
 }
 
-.footer > div {
+.footer > div > div {
   flex-direction: column;
   border: #ffffff solid 1px;
   align-items: center;
@@ -189,77 +189,77 @@ input[name="slide"] {
   padding: 1rem;
 }
 
-.footer > div .externals-h {
+.footer > div > div .externals-h {
   background-color: #f0c20a;
   padding: 0;
   margin: 0;
 }
 
-.footer > div .externals-h {
+.footer > div > div .externals-h {
   flex-direction: row;
   display: flex;
 }
 
-.footer > div .externals-h li {
+.footer > div > div .externals-h li {
   list-style: none;
 }
 
-.footer > div .externals-h li a {
+.footer > div > div .externals-h li a {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0c20a;
 }
 
-.footer > div .externals-h li a:hover {
+.footer > div > div .externals-h li a:hover {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0d259;
 }
 
-.footer > div .externals-h li a {
+.footer > div > div .externals-h li a {
   border: #ffffff solid 1px;
   color: #151637;
 }
 
-.footer > div .externals-h li a {
+.footer > div > div .externals-h li a {
   text-decoration: none;
   display: block;
 }
 
-.footer > div img {
+.footer > div > div img {
   height: 8rem;
   width: 8rem;
 }
 
-.footer > div .externals-v {
+.footer > div > div .externals-v {
   background-color: #f0c20a;
   padding: 0;
   margin: 0;
 }
 
-.footer > div .externals-v {
+.footer > div > div .externals-v {
   flex-direction: column;
   display: flex;
 }
 
-.footer > div .externals-v li {
+.footer > div > div .externals-v li {
   list-style: none;
 }
 
-.footer > div .externals-v li a {
+.footer > div > div .externals-v li a {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0c20a;
 }
 
-.footer > div .externals-v li a:hover {
+.footer > div > div .externals-v li a:hover {
   padding: 1rem 2rem 1rem 2rem;
   background-color: #f0d259;
 }
 
-.footer > div .externals-v li a {
+.footer > div > div .externals-v li a {
   border: #ffffff solid 1px;
   color: #151637;
 }
 
-.footer > div .externals-v li a {
+.footer > div > div .externals-v li a {
   text-decoration: none;
   display: block;
 }
@@ -332,5 +332,15 @@ input[name="slide"] {
 
 .footer p {
   color: #fdffd4;
-  font-size: 0.90rem;
+  font-size: 0.9rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer > div {
+  display: flex;
+  flex-direction: row;
 }
