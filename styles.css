@@ -112,10 +112,14 @@ input[name="slide"] {
 #slide3:checked ~ .controls label[for="slide3"] {
   background-color: #333;
 }
-/*##################################*/
-.section {
+
+.section-header {
   background: linear-gradient(-45deg, #151637 0% 50%, #f0c20a 75% 50%);
+  padding: 1rem;
+  color: #151637;
 }
+
+/*##################################*/
 
 .header {
   padding: 1rem 0rem 1rem 0rem;
@@ -278,6 +282,7 @@ input[name="slide"] {
   flex-direction: column;
   display: flex;
   padding: 0;
+  margin: 0;
 }
 
 .logo-with-footer div h1 {
@@ -294,3 +299,38 @@ input[name="slide"] {
   margin: auto;
 }
 /*##################################*/
+
+.logo-with-footer {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.logo-with-footer > img {
+  width: fit-content;
+  margin: 0;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: row;
+}
+
+.technologies > .logo-with-footer {
+  border: #ffffff solid 1px;
+  height: 100%;
+  justify-content: center;
+}
+
+.technologies {
+  padding: 0;
+  border: #ffffff solid 1px;
+  overflow: hidden;
+}
+
+.footer p {
+  color: #fdffd4;
+  font-size: 0.90rem;
+}

@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image" href="img_1.png">
+    <link rel="icon" type="image" href="img_1.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -90,20 +90,35 @@
           <label for="slide3"></label>
         </div>
       </div>
-      <script>
-        document.addEventListener("DOMContentLoaded", function () {
-          let currentSlide = 1;
-          const totalSlides = 3;
-
-          function changeSlide() {
-            document.getElementById(`slide${currentSlide}`).checked = true;
-            currentSlide = (currentSlide % totalSlides) + 1;
-          }
-
-          changeSlide();
-          setInterval(changeSlide, 1750);
-        });
-      </script>
+      <h1 class="section-header">Sección 1</h1>
+      <section>
+        <div class="technologies">
+          <div class="logo-with-footer">
+            <img src="img_2.png" alt="" />
+            <div>
+              <h1>Item #1</h1>
+            </div>
+          </div>
+          <div class="logo-with-footer">
+            <img src="img_2.png" alt="" />
+            <div>
+              <h1>Item #2</h1>
+            </div>
+          </div>
+          <div class="logo-with-footer">
+            <img src="img_2.png" alt="" />
+            <div>
+              <h1>Item #3</h1>
+            </div>
+          </div>
+          <div class="logo-with-footer">
+            <img src="img_2.png" alt="" />
+            <div>
+              <h1>Item #4</h1>
+            </div>
+          </div>
+        </div>
+      </section>
       <footer class="footer">
         <div>
           <ul class="externals-v">
@@ -193,8 +208,23 @@
               <a href=""><span>Enlace externo 6</span></a>
             </li>
           </ul>
+          <p>&copy; 2024 Veertex.dev. Todos los derechos reservados.</p>
         </div>
       </footer>
     </main>
   </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      let currentSlide = 1;
+      const totalSlides = 3;
+
+      function changeSlide() {
+        document.getElementById(`slide${currentSlide}`).checked = true;
+        currentSlide = (currentSlide % totalSlides) + 1;
+      }
+
+      changeSlide();
+      setInterval(changeSlide, 1750);
+    });
+  </script>
 </html>
