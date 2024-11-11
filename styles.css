@@ -89,6 +89,10 @@ input[name="slide"] {
   transform: translateX(-200%);
 }
 
+#slide4:checked ~ .slides {
+  transform: translateX(-300%);
+}
+
 .controls {
   position: absolute;
   bottom: 10px;
@@ -109,7 +113,8 @@ input[name="slide"] {
 
 #slide1:checked ~ .controls label[for="slide1"],
 #slide2:checked ~ .controls label[for="slide2"],
-#slide3:checked ~ .controls label[for="slide3"] {
+#slide3:checked ~ .controls label[for="slide3"],
+#slide4:checked ~ .controls label[for="slide4"] {
   background-color: #333;
 }
 

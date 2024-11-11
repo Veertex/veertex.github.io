@@ -30,13 +30,14 @@
         <input type="radio" name="slide" id="slide1" />
         <input type="radio" name="slide" id="slide2" />
         <input type="radio" name="slide" id="slide3" />
+        <input type="radio" name="slide" id="slide4" />
 
         <div class="slides">
           <div class="slide" id="s1">
             <section>
               <div>
-                <h2>Titulo #1</h2>
-                <span> Subtitulo </span>
+                <h2>Williams Torres</h2>
+                <span>Analista Programador</span>
               </div>
               <div>
                 <div class="logo-with-footer">
@@ -52,34 +53,33 @@
           <div class="slide" id="s2">
             <section>
               <div>
-                <h2>Titulo #2</h2>
-                <span> Subtitulo </span>
+                <h2>Proceso de Desarrollo #1</h2>
+                <span> Veertex.dev </span>
               </div>
               <div>
-                <div class="logo-with-footer">
-                  <img src="img_1.png" alt="" />
-                  <div>
-                    <h1>Veertex</h1>
-                    <span>.DEV</span>
-                  </div>
-                </div>
+                <iframe width="100%" height="75%" src="https://www.youtube.com/embed/ACGoFYH6jrA?si=ZkLJ3oaRNTBRDDVv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </section>
           </div>
           <div class="slide" id="s3">
             <section>
               <div>
-                <h2>Titulo #3</h2>
-                <span> Subtitulo </span>
+                <h2>Proceso de Desarrollo #2</h2>
+                <span> Veertex.dev </span>
               </div>
               <div>
-                <div class="logo-with-footer">
-                  <img src="img_1.png" alt="" />
-                  <div>
-                    <h1>Veertex</h1>
-                    <span>.DEV</span>
-                  </div>
-                </div>
+                <iframe width="100%" height="75%" src="https://www.youtube.com/embed/s9Kkw5f26VA?si=vESeXu9qeRk1vsSU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </section>
+          </div>
+          <div class="slide" id="s4">
+            <section>
+              <div>
+                <h2>Proceso de Desarrollo #3</h2>
+                <span> Veertex.dev </span>
+              </div>
+              <div>
+                <iframe width="100%" height="75%" src="https://www.youtube.com/embed/NhpdGSUgeGw?si=FkJ3oLgR_nGSCCIw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </section>
           </div>
@@ -88,6 +88,7 @@
           <label for="slide1"></label>
           <label for="slide2"></label>
           <label for="slide3"></label>
+          <label for="slide4"></label>
         </div>
       </div>
       <h1 class="section-header">Sección 1</h1>
@@ -222,7 +223,7 @@
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       let currentSlide = 1;
-      const totalSlides = 3;
+      const totalSlides = 4;
 
       function changeSlide() {
         document.getElementById(`slide${currentSlide}`).checked = true;
@@ -230,7 +231,7 @@
       }
 
       changeSlide();
-      setInterval(changeSlide, 1750);
+      setInterval(changeSlide, 3750);
     });
   </script>
 </html>
